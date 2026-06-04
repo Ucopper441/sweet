@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💕</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="musicToggle" class="music-btn" title="Toggle music">
+            <span class="music-icon">♪</span>
+        </button>
+        <audio id="bgMusic" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="content">
+            <!-- Opening Message -->
+            <div class="section opening-section">
+                <h1 class="title">✨ For You ✨</h1>
+                <p class="subtitle">A little something from my heart</p>
+                <button class="btn-start" onclick="scrollToLetter()">Open Letter</button>
+            </div>
+
+            <!-- Love Letter Section -->
+            <div class="section letter-section">
+                <div class="letter">
+                    <div class="letter-header">💌 A Letter From My Heart</div>
+                    <div class="letter-content">
+                        <p>Dear Love,</p>
+                        <p>I wanted to take a moment to tell you what you mean to me. Every day with you feels like a beautiful dream that I never want to wake up from.</p>
+                        <p>Your smile brightens my darkest days, your laugh is my favorite melody, and your presence makes everything feel right. The way you care, the way you listen, the way you make me feel seen and loved – it means everything.</p>
+                        <p>You are my favorite adventure, my safe haven, and my greatest blessing. I fall for you more deeply with each passing day, and I can't wait for all the beautiful moments we'll create together.</p>
+                        <p>Thank you for being you. Thank you for choosing me. Thank you for all the love you give.</p>
+                        <p class="signature">Forever yours,<br>💕</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Messages -->
+            <div class="section messages-section">
+                <h2>Special Messages</h2>
+                <div class="messages-grid">
+                    <div class="message-card" onclick="showMessage(this)">
+                        <span class="emoji">😊</span>
+                        <p class="message-text">You make me smile every single day</p>
+                    </div>
+                    <div class="message-card" onclick="showMessage(this)">
+                        <span class="emoji">💪</span>
+                        <p class="message-text">You're my strength and my inspiration</p>
+                    </div>
+                    <div class="message-card" onclick="showMessage(this)">
+                        <span class="emoji">🌟</span>
+                        <p class="message-text">You're the best part of my day</p>
+                    </div>
+                    <div class="message-card" onclick="showMessage(this)">
+                        <span class="emoji">🎀</span>
+                        <p class="message-text">I'm so lucky to have you in my life</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Hearts Canvas -->
+            <div class="section hearts-section">
+                <h2>✨ A Little Magic ✨</h2>
+                <canvas id="heartsCanvas" class="hearts-canvas"></canvas>
+                <p class="canvas-note">Click anywhere to create floating hearts!</p>
+            </div>
+
+            <!-- Photo Gallery Section -->
+            <div class="section gallery-section">
+                <h2>Our Moments</h2>
+                <div class="gallery">
+                    <div class="gallery-item gradient-1"></div>
+                    <div class="gallery-item gradient-2"></div>
+                    <div class="gallery-item gradient-3"></div>
+                    <div class="gallery-item gradient-4"></div>
+                </div>
+                <p class="gallery-note">Feel free to replace these with your actual photos!</p>
+            </div>
+
+            <!-- Closing Message -->
+            <div class="section closing-section">
+                <div class="closing-card">
+                    <p class="closing-text">Thank you for everything.</p>
+                    <p class="closing-text">I love you more than words can say.</p>
+                    <p class="heart-pulse">💕</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
