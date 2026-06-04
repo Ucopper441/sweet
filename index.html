@@ -9,14 +9,11 @@
 <body>
     <div class="stars"></div>
     
-    <!-- Music Player -->
+    <!-- Spotify Player -->
     <div class="music-player">
-        <button id="musicToggle" class="music-btn" title="Toggle music">
-            <span class="music-icon">♪</span>
+        <button id="musicToggle" class="music-btn" title="Toggle Spotify">
+            <span class="music-icon">🎵</span>
         </button>
-        <audio id="bgMusic" loop>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        </audio>
     </div>
 
     <!-- Main Container -->
@@ -97,6 +94,8 @@
         </div>
     </div>
 
+    <!-- Spotify Web Playback SDK -->
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
